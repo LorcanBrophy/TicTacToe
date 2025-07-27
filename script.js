@@ -190,7 +190,7 @@ function inputHandlers() {
     setTimeout(() => {
       document.querySelector('.board').style.display = 'grid';
       document.querySelector('.menu').style.display = 'flex';
-      document.getElementById('turn-indicator').style.display = 'block';
+      document.getElementById('turn-indicator').style.display = 'flex';
 
     }, 1250);
 
@@ -199,12 +199,14 @@ function inputHandlers() {
   document.querySelector('.cells').addEventListener('click', handleCellClick);
 
   document.querySelector('.reset').addEventListener('click', () => {
+    sounds.select.volume(1);
     sounds.select.play();
     resetGame();
   });
 
   document.getElementById('mode-select').addEventListener('change', (event) => {
     gameMode = event.target.value;
+    sounds.select.volume(1);
     sounds.select.play();
     document.getElementById('difficulty-select').disabled = (gameMode === 'multiplayer');
 
@@ -213,6 +215,7 @@ function inputHandlers() {
 
   document.getElementById('difficulty-select').addEventListener('change', (event) => {
     difficulty = event.target.value;
+    sounds.select.volume(1);
     sounds.select.play();
 
     resetGame();

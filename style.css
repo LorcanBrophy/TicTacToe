@@ -7,6 +7,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
     /* background: linear-gradient(180deg, rgb(119, 128, 255), rgb(101, 191, 194)); */
     background-color: rgb(103, 113, 248);
     transition: 0.3s ease-in-out;

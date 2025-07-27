@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="outerbox">
+
+      <h1>Simple TicTacToe</h1>
+
+
+      <div id="turn-indicator">Turn: X</div>
+      
+      <div class="board">
+        <div class="cells">
+            <button class="cell-button corner-cell-tl"></button>
+            <button class="cell-button"></button>
+            <button class="cell-button corner-cell-tr"></button>
+            <button class="cell-button"></button>
+            <button class="cell-button"></button>
+            <button class="cell-button"></button>
+            <button class="cell-button corner-cell-bl"></button>
+            <button class="cell-button"></button>
+            <button class="cell-button corner-cell-br"></button>
+        </div>
+      </div>
+
+      <div class="menu">
+        <button class="reset">Reset</button>
+
+        <select id="mode-select">
+          <option value="singleplayer">Single Player</option>
+          <option value="multiplayer">Multiplayer</option>
+        </select>
+
+        <select id="difficulty-select">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+
+      </div>
+
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

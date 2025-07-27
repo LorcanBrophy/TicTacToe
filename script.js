@@ -80,6 +80,7 @@ function handleCellClick(event) {
       playMove(button)
   }
 }
+
 // ai logic 
 
 function validMove(index) {

@@ -46,10 +46,10 @@ Download or clone the repository and open index.html in any modern web browser.
 
 # Technologies Used
 
-- HTML5
+- HTML
 
-- CSS3
+- CSS
 
-- JavaScript (ES6)
+- JavaScript
 
 - Howler.js for audio support

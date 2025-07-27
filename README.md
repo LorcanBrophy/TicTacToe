@@ -3,8 +3,6 @@ A responsive and interactive Tic Tac Toe game built with HTML, CSS, and JavaScri
 
 # Gameplay
 
-![Gameplay screenshot](readme-assets/image.png)
-
 ![Gameplay preview](readme-assets/gameplay.gif)
 
 # Features

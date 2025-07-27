@@ -87,6 +87,16 @@ button:hover {
     font-size: 12px;
 }
 
-.menu button:hover {
-    background-color: #c7c3c3;
+#start-screen button {
+    background-color: #e9e2e2;
+    border: 2px solid rgb(129, 121, 121);
+    padding: 3px;
+    font-family: inherit;
+    font-size: 12px;
+}
+
+
+
+.board, .menu, #turn-indicator {
+  display: none;
 }

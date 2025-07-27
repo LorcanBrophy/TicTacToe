@@ -11,7 +11,7 @@ const cellButtons = document.querySelectorAll('.cell-button'); // entire board
 const sounds = {
   move: new Howl({ src: ['sounds/move.mp3'] }),
   select: new Howl({ src: ['sounds/select.mp3'] }),
-  win: new Howl({ src: ['sounds/win.mp3'] }),
+  win: new Howl({ src: ['sounds/win.mp3'], volume: 0.2 }),
 };
 
 const winPatterns = [
@@ -21,11 +21,6 @@ const winPatterns = [
 ];
 
 // utilites
-
-function playSound(sound) { // allow overlapping sounds
-  const clone = sound.cloneNode();
-  clone.play();
-}
 
 function disableBoard() {
   cellButtons.forEach(btn => btn.disabled = true);
@@ -67,7 +62,7 @@ function resetGame() {
 function playMove(button) {
   button.textContent = currentTurn % 2 === 0 ? 'X' : 'O';
   button.disabled = true;
-  playSound(sounds.move);
+  sounds.move.play();
   currentTurn++;
   updateTurnIndicator();
   checkWinner();
@@ -185,6 +180,21 @@ function isWinning(board, symbol) {
 // input listeners
 
 function inputHandlers() {
+
+  document.getElementById('start-button').addEventListener('click', () => {
+    sounds.select.volume(0);
+    sounds.select.play();
+
+    document.getElementById('start-screen').style.display = 'none';
+
+    setTimeout(() => {
+      document.querySelector('.board').style.display = 'grid';
+      document.querySelector('.menu').style.display = 'flex';
+      document.getElementById('turn-indicator').style.display = 'block';
+
+    }, 1250);
+
+  });
 
   document.querySelector('.cells').addEventListener('click', handleCellClick);
 

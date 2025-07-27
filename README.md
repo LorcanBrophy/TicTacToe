@@ -1,6 +1,12 @@
 # Simple Tic Tac Toe
 A responsive and interactive Tic Tac Toe game built with HTML, CSS, and JavaScript. Features include sound effects, single and multiplayer modes, AI difficulty settings, and a polished UI.
 
+# Gameplay
+
+![Gameplay screenshot](readme-assets/image.png)
+
+![Gameplay preview](readme-assets/gameplay.gif)
+
 # Features
 - Start screen to preload audio for smoother gameplay
 

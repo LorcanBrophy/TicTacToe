@@ -45,6 +45,19 @@ function highlightWinner(pattern) {
   });
 }
 
+function preloadSounds() {
+  for (const key in sounds) {
+    sounds[key].volume = 0;
+    sounds[key].play().then(() => {
+      sounds[key].pause();
+      sounds[key].currentTime = 0;
+      sounds[key].volume = 1;
+    });
+  }
+}
+
+preloadSounds();
+
 // game logic
 
 function resetGame() {

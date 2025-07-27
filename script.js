@@ -22,6 +22,11 @@ const winPatterns = [
 
 // utilites
 
+function playSound(sound) { // allow overlapping sounds
+  const clone = sound.cloneNode();
+  clone.play();
+}
+
 function disableBoard() {
   cellButtons.forEach(btn => btn.disabled = true);
 }
@@ -62,7 +67,7 @@ function resetGame() {
 function playMove(button) {
   button.textContent = currentTurn % 2 === 0 ? 'X' : 'O';
   button.disabled = true;
-  sounds.move.play();
+  playSound(sounds.move);
   currentTurn++;
   updateTurnIndicator();
   checkWinner();

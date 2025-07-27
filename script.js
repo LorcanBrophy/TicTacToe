@@ -9,9 +9,9 @@ const turnIndicator = document.getElementById('turn-indicator'); // text above b
 const cellButtons = document.querySelectorAll('.cell-button'); // entire board
 
 const sounds = {
-  move: new Audio('sounds/move.mp3'),
-  select: new Audio('sounds/select.mp3'),
-  win: new Audio('sounds/win.mp3'),
+  move: new Howl({ src: ['sounds/move.mp3'] }),
+  select: new Howl({ src: ['sounds/select.mp3'] }),
+  win: new Howl({ src: ['sounds/win.mp3'] }),
 };
 
 const winPatterns = [
@@ -85,8 +85,7 @@ function handleCellClick(event) {
       playMove(button)
   }
 }
-
-// ai logic
+// ai logic 
 
 function validMove(index) {
   if (index >= 0 && index <= 8 && cellButtons[index].textContent === '') {

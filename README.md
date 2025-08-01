@@ -3,12 +3,14 @@ A responsive and interactive Tic Tac Toe game built with HTML, CSS, and JavaScri
 
 # Gameplay
 
+LIVE SITE:  https://lorcanbrophy.github.io/TicTacToe/
+
 ![Gameplay preview](readme-assets/gameplay.gif)
 
 # Features
 - Start screen to preload audio for smoother gameplay
 
-- Sound effects for moves, selection, and wins
+- Sound effects for moves, menu selection, and wins
 
 - Singleplayer mode with three difficulty levels: Easy, Medium, Hard
 

@@ -44,6 +44,10 @@ LIVE SITE:  https://lorcanbrophy.github.io/TicTacToe/
 #### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── win.mp3
 
 # Setup and Usage
+Play from live site: https://lorcanbrophy.github.io/TicTacToe/
+
+OR
+
 Download or clone the repository and open index.html in any modern web browser.
 
 # Technologies Used
